@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+   
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- ======== Favicon ======= -->
+        <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon" />
+        <!-- ======== Boxicons ======= -->
+        <link
+          href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+          rel="stylesheet"
+        />
+        <!-- ======== Slider Js ======= -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css"
+        />
+    
+        <!-- ======== StyleSheet ======= -->
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+        <title>world tour</title>
+      </head>
+    <body>
+      
+        <!--  Service Section -->
+      <section class="section service" id="service">
+        <div class="row container">
+          <img src="/static/photos/andaman.jpg" alt="" />
+          <div class="col">
+            <div class="title">
+              <h1>ANDAMAN</h1>
+            </div>
+            <p>
+                Andaman: Tropical paradise of turquoise waters, pristine beaches,
+                and vibrant marine life. Immerse in nature's beauty, explore coral reefs,
+                and witness stunning sunsets. Discover rich cultures, historical landmarks,
+                and secluded island getaways. An unforgettable escape into pure bliss.
+            </p>
+            <div class="d-flex">
+              <!-- <h2>15 Days Tour</h2>
+              <div class="rating">
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+                <span><i class="bx bxs-star"></i></span>
+              </div> -->
+            </div>
+            <div class="d-flex">
+              <!-- <h3 class="price"><span class="fa-solid fa-indian-rupee-sign"></span>7999.99</h3> -->
+              <div>
+                <form action="" style="display: flex; flex-direction: column;"  method="POST">
+                  {% csrf_token %}
+                  
+                  <label for="text" style="font-weight: bold;">write your experience</label>
+                  <textarea name="blog" id="text" cols="30" rows="10"></textarea>
+                  
+                  <button type="submit" style="background-color:  #ffc400;height: 3rem; margin-top: 15px; border-style: none; color: white;">submit</button>
+                </form>
+              </div>
+              <a href="https://www.andamantourism.gov.in/etourist/index.php/home" class="btn">Explore Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="maincard">
+        <h2 class="cardheading" style="padding:4rem;">Happy customer review</h2>
+        {% for review in reviews %}
+        <div class="card">
+          <div class="photo"> <img class="cardimg" src="/static/photos/reviewlogo.jpg" alt=" image"></div>
+          <div class="cardtitle"> <h3>{{review.username}}</h3></div>
+          <div class="carddis">{{review.text}} <p class="cardcontent"></p>
+          </div>
+       </div>
+       {% endfor %}
+      
+       </div>
+       
+     </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

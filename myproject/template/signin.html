@@ -1,0 +1,221 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ======== Favicon ======= -->
+    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon" />
+    <!-- ======== Boxicons ======= -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- ======== Slider Js ======= -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css"
+    />
+
+    <!-- ======== StyleSheet ======= -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <title>world tour</title>
+    <style>
+     
+    </style>
+  </head>
+  <body>
+    <!-- Preloader -->
+    <!-- <div class="loader">
+      <img src="/static/images/preloader.gif" alt="" />
+    </div> -->
+    <!-- header -->
+    <header class="header" id="header">
+      <!-- Navigation -->
+      <div class="navigation">
+        <nav class="nav d-flex">
+          <div class="logo">
+            <a href="/">
+              <img src="/static/images/logo.png" />
+            </a>
+          </div>
+          <ul class="nav-list d-flex">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#service" class="nav-link">Service</a>
+            </li>
+            <li class="nav-item">
+              <a href="#trips" class="nav-link">Trips</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="news.html" class="nav-link">News</a>
+            </li>
+          </ul>
+
+          <a href="/signin" class="btn sign-up">Sign Up</a>
+
+          <div class="hamburger">
+            <i class="bx bx-menu-alt-left"></i>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Hero -->
+      <div class="swiper-container slider-1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/static/images/pic-1.jpg" alt="" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="/static/images/pic-5.jpg" alt="hero image" />
+          </div>
+          <div class="swiper-slide">
+            <video muted loop autoplay>
+              <source src="/static/images/india.mp4" type="video/mp4" />
+              <source src="/static/images/video-2.webm" type="video/webm" />
+            </video>
+          </div>
+          <div class="swiper-slide">
+            <img src="/static/images/rashtrapati.jpg" alt="hero image" />
+          </div>
+
+          <div class="swiper-slide">
+            <video muted loop autoplay>
+              <source src="/static/images/video-3.mp4" type="video/mp4" />
+              <source src="/static/images/video-3.webm" type="video/webm" />
+            </video>
+          </div>
+          <div class="swiper-slide">
+            <img src="/static/images/hero-3.jpg" alt="" />
+          </div>
+
+          <div class="swiper-slide">
+            <video muted loop autoplay>
+              <source src="/static/images/video-1.mp4" type="video/mp4" />
+              <source src="/static/images/video-1.webm" type="video/webm" />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <h1>
+          Get Ready for <br />
+          Lifetime Journey
+        </h1>
+        <a href="#" class="btn">Get Started</a>
+      </div>
+
+      <div class="arrows d-flex">
+        <div class="swiper-prev d-flex">
+          <i class="bx bx-chevron-left swiper-icon"></i>
+        </div>
+        <div class="swiper-next d-flex">
+          <i class="bx bx-chevron-right swiper-icon"></i>
+        </div>
+      </div>
+    </header>
+
+     <!-- review form -->
+     <div class="anicontainer">
+      <div class="anisection">
+        <span class="outline"></span>
+      <form action="" method="POST" >
+        {% csrf_token %}
+        <h2>SignIn</h2>
+        <div class="inputbox">
+          <input type="text" name="Username" id="Username">
+          <span>UserName</span>
+          <i class="aniline"></i>
+        </div>
+        <!-- <div class="inputbox">
+          <input type="number" >
+          <span>Number</span>
+          <i class="aniline"></i>
+        </div> -->
+        <!-- <div class="inputbox">
+          <input type="password" name="Password" id="Password">
+          <span>Password</span>
+          <i class="aniline"></i>
+        </div> -->
+        <div class="inputbox">
+          <input type="text" name="Favouritecity" id="Favouritecity">
+          <span>Favourite City</span>
+          <i class="aniline"></i>
+        </div>
+        <div class="inputbox">
+          <input type="number" name="Rating" id="Rating" min="1" max="5">
+          <span>Rating</span>
+          <i class="aniline"></i>
+        </div>
+        <div class="anilinks">
+          <a href="#">Signup</a>
+          <a href="#">Forget Password</a>
+        </div>
+        <!-- <div class="inputbox"  style="margin-bottom: 4rem;">
+          <input type="submit" value="submit"   >
+        </div>
+         -->
+        <button type="Submit">Sign up</button>
+      </form>
+      </div>
+     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="row container">
+        <div class="col">
+          <h3>Company</h3>
+          <a href="#">Contact Us</a>
+          <a href="#">Executive Team</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Executive Team</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+          <h3>Learning Center</h3>
+
+          <a href="#">Contact Us</a>
+          <a href="#">Executive Team</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Executive Team</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+          <h3>Partner With Us</h3>
+
+          <a href="#">Contact Us</a>
+          <a href="#">Executive Team</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Executive Team</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+          <img src="/static/images/pic-1.jpg" alt="" />
+          <img src="/static/images/pic-2.jpg" alt="" />
+          <img src="/static/images/pic-3.jpg" alt="" />
+          <img src="/static/images/pic-4.jpg" alt="" />
+        </div>
+      </div>
+    </footer>
+
+    <!-- ======== SwiperJS ======= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>
+    <!-- ======== SCROLL REVEAL ======= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+    <!-- ======== SliderJS ======= -->
+    <script src="/static/js/slider.js"></script>
+    <!-- ======== IndexJS ======= -->
+    <script src="/static/js/index.js"></script>
+  </body>
+</html>

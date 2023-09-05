@@ -1,0 +1,220 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ======== Favicon ======= -->
+    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon" />
+    <!-- ======== Boxicons ======= -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- ======== Slider Js ======= -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.css"
+    />
+
+    <!-- ======== StyleSheet ======= -->
+    <link rel="stylesheet" href="{% static  'css/styles.css' %}" />
+    <title>world tour</title>
+  </head>
+  <body>
+    
+
+    
+   
+    <!-- header -->
+    <header class="header" id="header">
+      <!-- Navigation -->
+      <div class="navigation">
+        <nav class="nav d-flex">
+          <div class="logo">
+            <a href="/">
+              <img src="/static/images/logo.png" />
+            </a>
+          </div>
+          <ul class="nav-list d-flex">
+            <li class="nav-item">
+              <a href="\home" class="nav-link">Home</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a href="\about" class="nav-link">About</a>
+            </li> -->
+            <!-- <li class="nav-item">
+              <a href="\service" class="nav-link">Service</a>
+            </li> -->
+            <!-- <li class="nav-item">
+              <a href="\trips" class="nav-link">Trips</a>
+            </li> -->
+            <li class="nav-item">
+              <a href="\contact" class="nav-link">Contact</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a href="#news.html" class="nav-link">News</a>
+            </li> -->
+          </ul>
+
+          <a href="/" class="btn sign-up">Log Out</a>
+
+          <div class="hamburger">
+            <i class="bx bx-menu-alt-left"></i>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Hero -->
+      <div class="swiper-container slider-1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/static/images/pic-1.jpg" alt="" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="/static/images/pic-5.jpg" alt="hero image" />
+          </div>
+          <div class="swiper-slide">
+            <video muted loop autoplay>
+              <source src="/static/images/india.mp4" type="video/mp4" />
+              <source src="/static/images/video-2.webm" type="video/webm" />
+            </video>
+          </div>
+          <div class="swiper-slide">
+            <img src="/static/images/rashtrapati.jpg" alt="hero image" />
+          </div>
+
+          <div class="swiper-slide">
+            <video muted loop autoplay>
+              <source src="/static/images/video-3.mp4" type="video/mp4" />
+              <source src="/static/images/video-3.webm" type="video/webm" />
+            </video>
+          </div>
+          <div class="swiper-slide">
+            <img src="/static/images/hero-3.jpg" alt="" />
+          </div>
+
+          <div class="swiper-slide">
+            <video muted loop autoplay>
+              <source src="/static/images/video-1.mp4" type="video/mp4" />
+              <source src="/static/images/video-1.webm" type="video/webm" />
+            </video>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h1>
+          Get Ready for <br />
+          Lifetime Journey
+        </h1>
+        <!-- <a href="#" class="btn">Get Started</a> -->
+      </div>
+
+      <div class="arrows d-flex">
+        <div class="swiper-prev d-flex">
+          <i class="bx bx-chevron-left swiper-icon"></i>
+        </div>
+        <div class="swiper-next d-flex">
+          <i class="bx bx-chevron-right swiper-icon"></i>
+        </div>
+      </div>
+    </header>
+
+    <!--cards-->
+    <div class="maincard">
+      <h2 class="cardheading" style="padding:4rem;">More Intresting Place</h2>
+     <div class="card">
+        <div class="photo"> <img class="cardimg" src="/static/photos/goa.jpg" alt=" image"></div>
+        <div class="cardtitle"> <h3>Goa</h3></div>
+        <div class="carddis"> <p class="cardcontent">Goa, a coastal paradise in India, captivates visitors with its pristine beaches, vibrant nightlife, and rich blend of Indian and Portuguese cultures.</p>
+         <div class="cardbtn"><button class="readbtn"><a href="/goa">visit</a></button></div>
+        </div>
+     </div>
+     <div class="card">
+        <div class="photo"> <img class="cardimg" src="/static/photos/andaman.jpg" alt=" image"></div>
+        <div class="cardtitle"> <h3>Andaman</h3></div>
+        <div class="carddis"> <p class="cardcontent">Andaman: Nature's exquisite masterpiece, where turquoise waters meet pristine beaches, creating a tropical paradise.</p>
+         <div class="cardbtn"><button class="readbtn"><a href="/andman">visit</a></button></div>
+        </div>
+     </div>
+     <div class="card">
+        <div class="photo"> <img class="cardimg" src="/static/photos/assam.jpg" alt=" image"></div>
+        <div class="cardtitle"> <h3>Assam</h3></div>
+        <div class="carddis"> <p class="cardcontent">Assam: Where verdant tea gardens, mystical rivers, and diverse wildlife paint a picturesque tapestry of natural beauty.</p>
+         <div class="cardbtn"><button class="readbtn"><a href="/assam">visit</a></button></div>
+        </div>
+     </div>
+     <div class="card">
+        <div class="photo"> <img class="cardimg" src="/static/photos/chitrakoot.jpg" alt=" image"></div>
+        <div class="cardtitle"> <h3>Madhya Pradesh</h3></div>
+        <div class="carddis"> <p class="cardcontent">Welcome to the heart of India, Madhya Pradesh, a state which exudes timelessness in every way. The exotic land is an intoxicating mixture of rich history, vibrant sights, awe inspiring art and shrines.</p>
+         <div class="cardbtn"><button class="readbtn"><a href="/chitrakoot">visit</a></button></div>
+        </div>
+     </div>
+     <div class="card">
+        <div class="photo"> <img class="cardimg" src="/static/photos/jaisalmer.jpg" alt=" image"></div>
+        <div class="cardtitle"> <h3>Rajasthan</h3></div>
+        <div class="carddis"> <p class="cardcontent">Rajasthan is one of the most popular tourist destinations in India, for both domestic and international tourists. Rajasthan attracts tourists for its historical forts, palaces, art and culture with its slogan "Padharo Mhare Desh".[</p>
+         <div class="cardbtn"><button class="readbtn"><a href="/jaisalmer">visit</a></button></div>
+        </div>
+     </div>
+     <div class="card">
+        <div class="photo"> <img class="cardimg" src="/static/photos/kerla.jpg" alt=" image"></div>
+        <div class="cardtitle"> <h3>Kerala</h3></div>
+        <div class="carddis"> <p class="cardcontent">Kerala: God's Own Country, where backwaters, lush green landscapes, and Ayurvedic traditions create a harmonious paradise.</p>
+         <div class="cardbtn"><button class="readbtn"><a href="/kerala">visit</a></button></div>
+        </div>
+     </div>
+     
+
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="row container">
+        <div class="col">
+          <h3>Company</h3>
+          <a href="#">Contact Us</a>
+          <a href="#">Executive Team</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Executive Team</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+          <h3>Learning Center</h3>
+
+          <a href="#">Contact Us</a>
+          <a href="#">Executive Team</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Executive Team</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+          <h3>Partner With Us</h3>
+
+          <a href="#">Contact Us</a>
+          <a href="#">Executive Team</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Executive Team</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+          <img src="/static/images/pic-1.jpg" alt="" />
+          <img src="/static/images/pic-2.jpg" alt="" />
+          <img src="/static/images/pic-3.jpg" alt="" />
+          <img src="/static/images/pic-4.jpg" alt="" />
+        </div>
+      </div>
+    </footer>
+
+    <!-- ======== SwiperJS ======= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>
+    <!-- ======== SCROLL REVEAL ======= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+    <!-- ======== SliderJS ======= -->
+    <script src="js/slider.js"></script>
+    <!-- ======== IndexJS ======= -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
